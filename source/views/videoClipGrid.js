@@ -1,9 +1,9 @@
 enyo.kind({
-    name: "gopro.PlaylistGridPanel",
+    name: "gopro.VideoClipGridPanel",
     kind: "moon.Panel",
     smallHeader: true,
     headerBackgroundSrc: "assets/gopro.png",
-    headerBackgroundPosition: "top left",
+    headerBackgroundPosition: "top right",
     headerOptions: {
         classes: "gopro-header"
     },
@@ -19,7 +19,7 @@ enyo.kind({
             minHeight: 285,
             selection: true,
             events: {
-                onPlaylistGridSelectedChanged: ""
+                onVideoClipGridSelectedChanged: ""
             },
             scrollerOptions: {
                 kind: "moon.Scroller",
@@ -28,10 +28,10 @@ enyo.kind({
                 spotlightPagingControls: true
             },
             components: [{
-                kind: "gopro.PlaylistImageItem"
+                kind: "gopro.VideoClipImageItem"
             }],
             selectedChanged: function (inSender, inEvent) {
-                this.doPlaylistGridSelectedChanged(inEvent);
+                this.doVideoClipGridSelectedChanged(inEvent);
             }
         }]
     }],
@@ -50,7 +50,7 @@ enyo.kind({
 });
 
 enyo.kind({
-    name: "gopro.PlaylistImageItem",
+    name: "gopro.VideoClipImageItem",
     kind: "moon.GridListImageItem",
     mixins: ["moon.SelectionOverlaySupport"],
     //selectionOverlayVerticalOffset: 35,

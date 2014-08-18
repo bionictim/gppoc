@@ -3,7 +3,8 @@ enyo.kind({
     pattern: "activity",
     classes: "moon enyo-fit",
     handlers: {
-        onGridListSelectedChanged: "gridListSelectedChanged"
+        onPlaylistGridSelectedChanged: "playlistGridSelectedChanged",
+        onVideoClipGridSelectedChanged: "videoClipGridSelectedChanged"
     },
     components: [{
         useHandle: true,
@@ -21,44 +22,36 @@ enyo.kind({
            { kind: "moon.IconButton", src: "$lib/moonstone/images/video-player/icon-placeholder.png" },
            { kind: "moon.IconButton", src: "$lib/moonstone/images/video-player/icon-placeholder.png" },
            { kind: "moon.IconButton", src: "$lib/moonstone/images/video-player/icon-placeholder.png" },
-           { kind: "moon.IconButton", src: "$lib/moonstone/images/video-player/icon-placeholder.png" },           { kind: "moon.IconButton", src: "$lib/moonstone/images/video-player/icon-placeholder.png" },
+           { kind: "moon.IconButton", src: "$lib/moonstone/images/video-player/icon-placeholder.png" },
+           { kind: "moon.IconButton", src: "$lib/moonstone/images/video-player/icon-placeholder.png" },
            { kind: "moon.IconButton", src: "$lib/moonstone/images/video-player/icon-placeholder.png" },
            { kind: "moon.IconButton", src: "$lib/moonstone/images/video-player/icon-placeholder.png" },
            { kind: "moon.IconButton", src: "$lib/moonstone/images/video-player/icon-placeholder.png" },
            { kind: "moon.IconButton", src: "$lib/moonstone/images/video-player/icon-placeholder.png" },
            { kind: "moon.IconButton", src: "$lib/moonstone/images/video-player/icon-placeholder.png" },
            { kind: "moon.IconButton", src: "$lib/moonstone/images/video-player/icon-placeholder.png" }
-           ,
-            {
-                name: "videoClipsRepeater",
-                kind: "enyo.DataRepeater",
-                components: [{
-                    kind: "Image",
-                    bindings: [
-                        { from: ".model.thumbnail_default", to: ".src"}
-                    ]
-                }]
-            }
         ]
     }, {
         name: "panels",
         kind: "moon.Panels",
-        pattern: "alwaysviewing",
+        pattern: "activity",
         classes: "enyo-fit",
         useHandle: true,
         components: [{
             kind: "gopro.PlaylistGridPanel"
+        // }, {
+        //     kind: "gopro.VideoClipGridPanel"
         }]
     }],
     rendered: function () {
         this.inherited(arguments);
         enyo.Spotlight.spot(this.$.panels);
-        enyo.Spotlight.spot(this.$.panels2);
     },
     create: function () {
         this.inherited(arguments);
     },
-    gridListSelectedChanged: function (inSender, inEvent) {
+    playlistGridSelectedChanged: function (inSender, inEvent) {
+        //this.$.panels.setIndex(1);
         var item = inEvent.previous;
         if (item) {
             enyo.log(item);
@@ -68,6 +61,9 @@ enyo.kind({
             enyo.log("No item"); // Deselected?
             enyo.log(inEvent);
         }
+    },
+    videoClipGridSelectedChanged: function (inSender, inEvent) {
+        this.$.panels.setIndex(0);
     },
     handleShowingChanged: function (inSender, inEvent) {
         this.$.panels.setHandleShowing(inSender.getChecked());

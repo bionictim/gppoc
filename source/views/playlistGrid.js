@@ -1,9 +1,14 @@
 enyo.kind({
     name: "gopro.PlaylistGridPanel",
     kind: "moon.Panel",
+    title: "Playlists",
     smallHeader: true,
-    headerBackgroundSrc: "assets/gopro.png",
-    headerBackgroundPosition: "top left",
+    autoNumber: false,
+    //titleAbove: "Back to Playlists",
+    // titleBelow: "This is a title",
+    // subTitleBelow: "This is a subtitle",
+    headerBackgroundSrc: "assets/gopro.png?3",
+    headerBackgroundPosition: "top right",
     headerOptions: {
         classes: "gopro-header"
     },
@@ -15,8 +20,8 @@ enyo.kind({
             kind: "moon.DataGridList",
             fit: true,
             spacing: 20,
-            minWidth: 300,
-            minHeight: 285,
+            minWidth: 450,
+            minHeight: 350,
             selection: true,
             events: {
                 onPlaylistGridSelectedChanged: ""
@@ -62,9 +67,5 @@ enyo.kind({
         { from: ".model.link_text", to: ".caption" },
         { from: ".model.videoCountDisplay", to: ".subCaption" },
         { from: ".model.thumbnail_default", to: ".source" }
-    ],
-    selectedChanged: function (inSender, inEvent) {
-        enyo.log(inEvent);
-        enyo.log(this.model);
-    }
+    ]
 });

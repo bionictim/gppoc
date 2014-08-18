@@ -28,7 +28,36 @@
 
 /* Other Font Properties */
 
-@gopro-font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+@font-face {
+    font-family: PFDinTextPro;
+    font-weight: 700;
+    font-style: normal;
+    src: url(//d32ajffse01guc.cloudfront.net/fonts/v1.0/pfdin/pfdin-bold.eot?#iefix) format("embedded-opentype"),url(//d32ajffse01guc.cloudfront.net/fonts/v1.0/pfdin/pfdin-bold.ttf) format("truetype")
+}
+
+@font-face {
+    font-family: PFDinTextPro;
+    font-weight: 100;
+    font-style: normal;
+    src: url(//d32ajffse01guc.cloudfront.net/fonts/v1.0/pfdin/pfdin-light.eot?#iefix) format("embedded-opentype"),url(//d32ajffse01guc.cloudfront.net/fonts/v1.0/pfdin/pfdin-light.ttf) format("truetype")
+}
+
+@font-face {
+    font-family: PFDinTextPro;
+    font-weight: 500;
+    font-style: normal;
+    src: url(//d32ajffse01guc.cloudfront.net/fonts/v1.0/pfdin/pfdin-medium.eot?#iefix) format("embedded-opentype"),url(//d32ajffse01guc.cloudfront.net/fonts/v1.0/pfdin/pfdin-medium.ttf) format("truetype")
+}
+
+@font-face {
+    font-family: PFDinTextPro;
+    font-weight: 400;
+    font-style: normal;
+    src: url(//d32ajffse01guc.cloudfront.net/fonts/v1.0/pfdin/pfdin-regular.eot?#iefix) format("embedded-opentype"),url(//d32ajffse01guc.cloudfront.net/fonts/v1.0/pfdin/pfdin-regular.ttf) format("truetype")
+}
+
+
+@gopro-font-family: PFDinTextPro,Arial,sans-serif; /* Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif; */
 
 @moon-font-family: @gopro-font-family;
 @moon-font-family-light: @gopro-font-family;
@@ -37,14 +66,15 @@
 @moon-non-latin-font-family: "LG Display";
 @moon-non-latin-font-family-light: "LG Display Light";
 
-/*
-@moon-header-font-family: "Miso";
+
+@moon-header-font-family: @gopro-font-family;
 @moon-header-font-weight: normal;
 @moon-header-letter-spacing: normal;
 @moon-header-font-style: normal;
 @moon-header-line-height: normal;
 @moon-small-header-line-height: normal;
 
+/*
 @moon-popup-header-font-family: "Miso";
 @moon-popup-header-font-weight: normal;
 @moon-popup-header-letter-spacing: normal;

@@ -1,0 +1,103 @@
+/* 
+    You can modify the Moonstone theme by adding variable and rule overrides to this
+    file.  To enable theming, follow these steps:
+
+    1. In source/package.js, change "$lib/moonstone" to "$lib/moonstone/source".
+    2. In source/style/package.js, uncomment "Theme.less" line.
+    3. Add variable and rule overrides below.
+
+    See [https://github.com/enyojs/enyo/wiki/UI-Theming] for more information.
+*/
+
+
+
+/* Moonstone theme variable definitions: */
+/* @import "../../lib/moonstone/css/moonstone-variables-light.less"; */
+@import "../../lib/moonstone/css/moonstone-variables-dark.less";
+
+
+
+/* Moonstone default variable definitions: */
+@import "../../lib/moonstone/css/moonstone-variables.less";
+
+
+
+/* Place your Moonstone variable overrides here --------------- */
+
+@moon-pink: #00ADEF;
+
+/* Other Font Properties */
+
+@gopro-font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+
+@moon-font-family: @gopro-font-family;
+@moon-font-family-light: @gopro-font-family;
+@moon-font-family-bold: @gopro-font-family;
+@moon-alt-font-family: "Miso";
+@moon-non-latin-font-family: "LG Display";
+@moon-non-latin-font-family-light: "LG Display Light";
+
+/*
+@moon-header-font-family: "Miso";
+@moon-header-font-weight: normal;
+@moon-header-letter-spacing: normal;
+@moon-header-font-style: normal;
+@moon-header-line-height: normal;
+@moon-small-header-line-height: normal;
+
+@moon-popup-header-font-family: "Miso";
+@moon-popup-header-font-weight: normal;
+@moon-popup-header-letter-spacing: normal;
+@moon-popup-header-font-style: normal;
+@moon-popup-header-line-height: normal;
+*/
+
+@moon-sub-header-font-family: @gopro-font-family;
+@moon-sub-header-font-weight: bold;
+@moon-sub-header-letter-spacing: 0;
+@moon-sub-header-font-style: normal;
+@moon-sub-header-line-height: 2em;
+
+/*
+@moon-super-header-font-family: "Miso";
+@moon-super-header-font-weight: normal;
+@moon-super-header-letter-spacing: normal;
+@moon-super-header-font-style: normal;
+@moon-super-header-line-height: normal;
+*/
+
+@moon-body-font-family: @gopro-font-family;
+@moon-body-font-weight: normal;
+@moon-body-letter-spacing: 0;
+@moon-body-font-style: normal;
+/* Body text line heights must be speified in px, since moon.ExpandableText requires precise line measurement */
+@moon-body-line-height: @moon-body-font-size + 6;
+@moon-non-latin-body-line-height: @moon-non-latin-body-font-size + 6;
+
+/*
+@moon-divider-font-family: "MuseoSans 700 Italic";
+@moon-divider-font-weight: normal;
+@moon-divider-font-style: normal;
+@moon-divider-letter-spacing: 0;
+
+@moon-button-font-family: "Miso Bold";
+@moon-button-font-weight: normal;
+@moon-button-font-style: normal;
+@moon-button-letter-spacing: normal;
+
+@moon-icon-font-family: "Moonstone Icons";
+@moon-icon-font-size: 72px;
+
+@accordion-sub-menu-line-height: 1.7em;
+*/
+
+/* ------------------------------------- end variable overrides */
+
+
+
+/* Moonstone rule definitions: */
+@import "../../lib/moonstone/css/moonstone-rules.less";
+
+/* Place your Moonstone rule overrides here ------------------- */
+
+/* ----------------------------------------- end rule overrides */

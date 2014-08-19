@@ -13,25 +13,26 @@ enyo.kind({
     }, {
         useHandle: true,
         name: "player",
-        kind: "gopro.VideoPlayer",
-        components: [ // For some reason, these can't go in the gopro.VideoPlayer kind or the normal videoPlayer controls won't get initialized. (It appears to replace it's components list.)
-           // { kind: "moon.IconButton", src: "$lib/moonstone/images/video-player/icon-placeholder.png" },
-           // { kind: "moon.IconButton", src: "$lib/moonstone/images/video-player/icon-placeholder.png" },
-           // { kind: "moon.IconButton", src: "$lib/moonstone/images/video-player/icon-placeholder.png" },
-           { kind: "moon.IconButton", src: "$lib/moonstone/images/video-player/icon-placeholder.png" },
-           { kind: "moon.IconButton", src: "$lib/moonstone/images/video-player/icon-placeholder.png" },
-           { kind: "moon.IconButton", src: "$lib/moonstone/images/video-player/icon-placeholder.png" },
-           { kind: "moon.IconButton", src: "$lib/moonstone/images/video-player/icon-placeholder.png" },
-           { kind: "moon.IconButton", src: "$lib/moonstone/images/video-player/icon-placeholder.png" },
-           { kind: "moon.IconButton", src: "$lib/moonstone/images/video-player/icon-placeholder.png" },
-           { kind: "moon.IconButton", src: "$lib/moonstone/images/video-player/icon-placeholder.png" },
-           { kind: "moon.IconButton", src: "$lib/moonstone/images/video-player/icon-placeholder.png" },
-           { kind: "moon.IconButton", src: "$lib/moonstone/images/video-player/icon-placeholder.png" },
-           { kind: "moon.IconButton", src: "$lib/moonstone/images/video-player/icon-placeholder.png" },
-           { kind: "moon.IconButton", src: "$lib/moonstone/images/video-player/icon-placeholder.png" },
-           { kind: "moon.IconButton", src: "$lib/moonstone/images/video-player/icon-placeholder.png" },
-           { kind: "moon.IconButton", src: "$lib/moonstone/images/video-player/icon-placeholder.png" }
-        ]
+        kind: "gopro.VideoPlayer"
+        //,
+        // components: [ // For some reason, these can't go in the gopro.VideoPlayer kind or the normal videoPlayer controls won't get initialized. (It appears to replace it's components list.)
+        //    // { kind: "moon.IconButton", src: "$lib/moonstone/images/video-player/icon-placeholder.png" },
+        //    // { kind: "moon.IconButton", src: "$lib/moonstone/images/video-player/icon-placeholder.png" },
+        //    // { kind: "moon.IconButton", src: "$lib/moonstone/images/video-player/icon-placeholder.png" },
+        //    { kind: "moon.IconButton", src: "$lib/moonstone/images/video-player/icon-placeholder.png" },
+        //    { kind: "moon.IconButton", src: "$lib/moonstone/images/video-player/icon-placeholder.png" },
+        //    { kind: "moon.IconButton", src: "$lib/moonstone/images/video-player/icon-placeholder.png" },
+        //    { kind: "moon.IconButton", src: "$lib/moonstone/images/video-player/icon-placeholder.png" },
+        //    { kind: "moon.IconButton", src: "$lib/moonstone/images/video-player/icon-placeholder.png" },
+        //    { kind: "moon.IconButton", src: "$lib/moonstone/images/video-player/icon-placeholder.png" },
+        //    { kind: "moon.IconButton", src: "$lib/moonstone/images/video-player/icon-placeholder.png" },
+        //    { kind: "moon.IconButton", src: "$lib/moonstone/images/video-player/icon-placeholder.png" },
+        //    { kind: "moon.IconButton", src: "$lib/moonstone/images/video-player/icon-placeholder.png" },
+        //    { kind: "moon.IconButton", src: "$lib/moonstone/images/video-player/icon-placeholder.png" },
+        //    { kind: "moon.IconButton", src: "$lib/moonstone/images/video-player/icon-placeholder.png" },
+        //    { kind: "moon.IconButton", src: "$lib/moonstone/images/video-player/icon-placeholder.png" },
+        //    { kind: "moon.IconButton", src: "$lib/moonstone/images/video-player/icon-placeholder.png" }
+        // ]
     }, {
         name: "panels",
         kind: "moon.Panels",

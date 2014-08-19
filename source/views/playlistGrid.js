@@ -1,14 +1,15 @@
 enyo.kind({
     name: "gopro.PlaylistGridPanel",
     kind: "moon.Panel",
+    classes: "playlist-grid",
     title: "Playlists",
     smallHeader: true,
     autoNumber: false,
     //titleAbove: "Back to Playlists",
     // titleBelow: "This is a title",
     // subTitleBelow: "This is a subtitle",
-    headerBackgroundSrc: "assets/gopro.png?3",
-    headerBackgroundPosition: "top right",
+    headerBackgroundSrc: "assets/gopro_logo.svg", //"assets/gopro.png?3",
+    headerBackgroundPosition: "center right 50px",
     headerOptions: {
         classes: "gopro-header"
     },
@@ -21,7 +22,7 @@ enyo.kind({
             fit: true,
             spacing: 20,
             minWidth: 450,
-            minHeight: 350,
+            minHeight: 256, //350,
             selection: true,
             events: {
                 onPlaylistGridSelectedChanged: ""

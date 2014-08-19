@@ -37,7 +37,8 @@ enyo.kind({
             classes: "moon-2h gopro-channel-info",
             components: [{
                 kind: "Image",
-                src: "assets/gopro.png"
+                src: "assets/gopro.png",
+                classes: "gopro-player-channelinfo-image"
             //     content: "3D"
             // }, {
             //     content: "Live"

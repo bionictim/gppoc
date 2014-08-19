@@ -1,9 +1,13 @@
 
 
 .gopro-header {
-    background-size: contain;
-    border: none;
-    margin-bottom: 40px;
+    /*background-size: 336px;*/
+    background-size: auto;
+    border-top: none;
+    border-bottom: none;
+    border-color: #404040;
+    border-bottom-width: 3px;
+    /* border: none; */
 }
 
 .video-clip-grid .gopro-header {
@@ -20,11 +24,27 @@
 
 .moon-header {
 	margin: 0 18px;
+	color: #fff;
+	background-position: 20% 90%;
 }
 
 .moon-header.moon-small-header {
-	height: 120px;
-	margin-bottom: 50px;
+	height: 160px;
+	padding-bottom: 20px;
+	margin-bottom: 30px;
+	border-right: 72px solid transparent;
+}
+
+.moon-header-title {
+	border-bottom: 3px solid #404040;
+}
+
+.moon-panels.activity .moon-panel-mini-header-title-above {
+	border-color: #404040;
+}
+
+.moon-sub-header-text {
+	font-weight: normal;
 }
 
 .moon-background-wrapper-client-content.left {
@@ -39,15 +59,64 @@
 	margin-bottom: 10px;
 }
 
+.moon-gridlist-imageitem {
+	.caption,
+	.sub-caption {
+		position: absolute;
+		bottom: 0;
+		color: #fff;
+		padding: 5px 3%;
+		width: 94%;
+	}
+	.caption {
+		text-align: left;
+		font-weight: normal;
+		background-color: rgba(0,0,0,0.6);
+		/*background-color: rgba(255,255,255,0.15);*/
+	}
+	.sub-caption {
+		text-align: right;
+	}
+}
+
+.playlist-grid {
+	.moon-gridlist-imageitem {
+		.caption {
+			font-size: 30px;
+			background-color: rgba(0,0,0,0.6);
+		}
+	}
+}
+
+.video-clip-grid {
+	.moon-gridlist-imageitem {
+		.caption {
+			font-size: 24px;
+		}
+	}
+}
 
 .moon-video-player-info-subtitle {
 	margin-top: 20px;
 	margin-bottom: -20px; /* Should instead figure out how to get rid of sub-subtitle */
+	color: #37A0C2;
 }
 
-/*.moon-video-player-info-redicon {
-	margin-top: 5px;
-}*/
+.moon-channelinfo {
+	text-align: left;
+}
+
+.moon-video-player-info-description {
+	min-height: 64px;
+}
+
+.moon-video-player-channel-info-badges img.gopro-player-channelinfo-image {
+	margin-top: -6px;
+}
+
+.moon-video-player-info-redicon {
+	background-color: #2B3989;
+}
 
 /*
 .moon-video-transport-slider-popup-label {

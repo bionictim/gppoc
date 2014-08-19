@@ -3,8 +3,8 @@ enyo.kind({
     kind: "moon.Panel",
     classes: "video-clip-grid",
     smallHeader: true,
-    headerBackgroundSrc: "assets/gopro-small-right.png",
-    headerBackgroundPosition: "top right",
+    headerBackgroundSrc: "assets/gopro_logo.svg", //"assets/gopro-small-right.png?2",
+    headerBackgroundPosition: "center right 50px",
     headerOptions: {
         classes: "gopro-header"
     },
@@ -22,7 +22,7 @@ enyo.kind({
             fit: true,
             spacing: 20,
             minWidth: 300,
-            minHeight: 285,
+            minHeight: 174, //210, // 285,
             selection: true,
             events: {
                 onVideoClipGridSelectedChanged: ""

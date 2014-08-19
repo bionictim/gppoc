@@ -2,7 +2,7 @@ enyo.kind({
     name: "gopro.settings",
     statics: {
         debug: true,
-        maxPlaylistLength: 2,
+        controlsSkipToNextVideo: true,
         useSampleVideos: true,
         sampleVideos: [
             "GoPro- Shark Feeding with Andy Casagrande in 2.7K 3D.mp4",
@@ -52,8 +52,9 @@ enyo.kind({
             // Surf + Skate
             "34908220556314462": "GoPro- Father & Daughter Surf Session with Chris and Malia Ward.mp4",
 
-            // "": ".mp4",
-            // "": ".mp4",
+            // Wild Animals
+            "52900196945757197": "GoPro- Rhino Kiss.mp4",
+            "61038416111862864": "GoPro- Elephant Lunch Break.mp4",
             // "": ".mp4",
 
             "fake": "no-url"

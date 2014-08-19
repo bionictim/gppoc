@@ -11,6 +11,7 @@ enyo.kind({
     //showInfo: true,
     autoplay: false,
     showJumpControls: true,
+    jumpStartEnd: true,
     showFFRewindControls: true,
     published: {
         link: "",

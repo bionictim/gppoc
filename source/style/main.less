@@ -1,18 +1,18 @@
 
 
 .gopro-header {
-    /*background-size: 336px;*/
-    background-size: auto;
+    background-size: 250px;
+   	/*background-size: auto;*/
     border-top: none;
-    border-bottom: none;
+    /*border-bottom: none;*/
     border-color: #404040;
     border-bottom-width: 3px;
     /* border: none; */
 }
 
-.video-clip-grid .gopro-header {
+/*.video-clip-grid .gopro-header {
 	background-size: auto;
-}
+}*/
 
 .gopro-channel-info {
 	img {
@@ -29,14 +29,29 @@
 }
 
 .moon-header.moon-small-header {
-	height: 160px;
+	height: 106px;
 	padding-bottom: 20px;
 	margin-bottom: 30px;
+}
+
+.moon-header-title-wrapper {
 	border-right: 72px solid transparent;
 }
 
 .moon-header-title {
-	border-bottom: 3px solid #404040;
+	/*border-bottom: 3px solid #404040;*/
+	font-size: 90px;
+	height: 105px;
+}
+
+.playlist-grid .moon-header-title {
+	text-align: right;
+}
+
+.video-clip-grid .moon-header-title {
+	background-image: url(../../assets/gopro_logo.svg);
+	background-position: center right;
+	background-repeat: no-repeat;
 }
 
 .moon-panels.activity .moon-panel-mini-header-title-above {
@@ -52,7 +67,11 @@
 }
 
 .moon-background-wrapper-client-content.bg {
-	background-color: rgba(0,0,0,0.99);
+	background-color: rgba(0,0,0,0.7);
+}
+
+.left.bg .moon-background-wrapper-client-tri {
+	border-left-color: rgba(0,0,0,0.7);
 }
 
 .enyo-gridlist-imageitem img {
@@ -97,7 +116,7 @@
 }
 
 .moon-video-player-info-subtitle {
-	margin-top: 20px;
+	margin-top: 34px;
 	margin-bottom: -20px; /* Should instead figure out how to get rid of sub-subtitle */
 	color: #37A0C2;
 }
@@ -106,16 +125,17 @@
 	text-align: left;
 }
 
-.moon-video-player-info-description {
+/*.moon-video-player-info-description {
 	min-height: 64px;
 }
-
+*/
 .moon-video-player-channel-info-badges img.gopro-player-channelinfo-image {
 	margin-top: -6px;
 }
 
 .moon-video-player-info-redicon {
 	background-color: #2B3989;
+	margin-top: 19px;
 }
 
 /*

@@ -39,10 +39,18 @@ enyo.kind({
             "34907195359364798": "GoPro- Still Lost in Peru.mp4",
             "34907643520747297": "GoPro- Endless Barrels - GoPro of the Winter 2013-14 powered by Surfline.mp4",
             
+            // Flight
+            "86532565028045884": "GoPro- Highline Rope Swing.mp4",
+            "71202746102974161": "GoPro- Wingsuits Over The Big Apple.mp4",
+            "78284940831098304": "GoPro- 3rd Person Paramotor.mp4",
+            "63977392154084468": "GoPro- Red Bull X Alps.mp4",
+
             // Gnarly
             "81332733543974530": "GoPro- Ghost Town Card Draw.mp4",
             "70483789154879179": "GoPro- MTB Volcano Descent With Aaron Chase.mp4",
 
+            // Surf + Skate
+            "34908220556314462": "GoPro- Father & Daughter Surf Session with Chris and Malia Ward.mp4",
 
             // "": ".mp4",
             // "": ".mp4",

@@ -3,8 +3,8 @@ enyo.kind({
     kind: "moon.Panel",
     classes: "video-clip-grid",
     smallHeader: true,
-    headerBackgroundSrc: "assets/gopro_logo.svg", //"assets/gopro-small-right.png?2",
-    headerBackgroundPosition: "center right 50px",
+    // headerBackgroundSrc: "assets/gopro_logo.svg", //"assets/gopro-small-right.png?2",
+    // headerBackgroundPosition: "center right 50px",
     headerOptions: {
         classes: "gopro-header"
     },

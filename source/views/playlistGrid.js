@@ -9,7 +9,7 @@ enyo.kind({
     // titleBelow: "This is a title",
     // subTitleBelow: "This is a subtitle",
     headerBackgroundSrc: "assets/gopro_logo.svg", //"assets/gopro.png?3",
-    headerBackgroundPosition: "center right 50px",
+    headerBackgroundPosition: "center left",
     headerOptions: {
         classes: "gopro-header"
     },

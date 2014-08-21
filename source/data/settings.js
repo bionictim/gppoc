@@ -3,7 +3,7 @@ enyo.kind({
     statics: {
         debug: true,
         controlsSkipToNextVideo: true,
-        useSampleVideos: true,
+        useSampleVideos: false,
         sampleVideos: [
             "GoPro- Shark Feeding with Andy Casagrande in 2.7K 3D.mp4",
             "GoPro- Petting A Tiger Shark.mp4",

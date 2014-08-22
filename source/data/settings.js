@@ -4,7 +4,7 @@ enyo.kind({
         debug: true,
         controlsSkipToNextVideo: true,
         useSampleVideos: true,
-        sampleVideosAreLocal: false,
+        sampleVideosBasePath: "",
         sampleVideos: [
             "https://d1lcg0vci8qqw3.cloudfront.net/H8A7BUWZ/OK9WWYNRXA65/m3u8/OK9WWYNRXA65.m3u8",
             "https://d1lcg0vci8qqw3.cloudfront.net/H8A7BUWZ/JE67SX8MXZYS/m3u8/JE67SX8MXZYS.m3u8",

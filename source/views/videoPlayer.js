@@ -77,8 +77,8 @@ enyo.kind({
     },
     create: function() {
         this.inherited(arguments);
-        this.set("playlist", new gopro.Playlist());
-        this.playlist.store.ignoreDuplicates = true;
+        // this.set("playlist", new gopro.Playlist());
+        //this.playlist.store.ignoreDuplicates = true;
     },
     onVideoStart: function () {
         // // Kludgy. Probably need to poll this.$.video.getReadyState()

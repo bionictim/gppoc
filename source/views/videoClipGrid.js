@@ -93,7 +93,8 @@ enyo.kind({
         var fileName = gopro.settings.sampleVideoHash["" + videoArray[i].id] ||
             gopro.settings.sampleVideos[i % gopro.settings.sampleVideos.length];
 
-        var result = "assets/sampleVideos/" + fileName;
+        var basePath = gopro.settings.sampleVideosAreLocal ? "assets/sampleVideos/" : "";
+        var result = basePath + fileName;
         return result;
     }
 });

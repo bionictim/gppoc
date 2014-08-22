@@ -1,6 +1,6 @@
 {
-	"id": "com.vertigo.gopro",
-	"version": "0.0.1",
+	"id": "com.vertigo2.gopro",
+	"version": "0.0.2",
 	"vendor": "Vertigo",
 	"type": "web",
 	"main": "index.html",

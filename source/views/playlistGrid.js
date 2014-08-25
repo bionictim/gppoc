@@ -8,7 +8,7 @@ enyo.kind({
     //titleAbove: "Back to Playlists",
     // titleBelow: "This is a title",
     // subTitleBelow: "This is a subtitle",
-    headerBackgroundSrc: "assets/gopro_logo.svg", //"assets/gopro.png?3",
+    headerBackgroundSrc: "assets/gopro_logo.svg",
     headerBackgroundPosition: "center left",
     headerOptions: {
         classes: "gopro-header"
@@ -67,6 +67,6 @@ enyo.kind({
     bindings: [
         { from: ".model.link_text", to: ".caption" },
         { from: ".model.videoCountDisplay", to: ".subCaption" },
-        { from: ".model.thumbnail_default", to: ".source" }
+        { from: ".model.thumbnail_large", to: ".source" }
     ]
 });

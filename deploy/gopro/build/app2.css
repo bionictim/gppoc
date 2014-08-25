@@ -62,30 +62,32 @@
 /* Caret */
 /* ---------------------------------------*/
 /* Place your Moonstone variable overrides here --------------- */
+/* Not sure why these don't get packaged, so re-including/re-referencing them in assets. */
+/* Seems ridiculous. We should figure out why. */
 /* Other Font Properties */
 @font-face {
   font-family: PFDinTextPro;
   font-weight: 700;
   font-style: normal;
-  src: url('../source/style/d32ajffse01guc.cloudfront.net/fonts/v1.0/pfdin/pfdin-bold.eot?#iefix') format("embedded-opentype"), url('../source/style/d32ajffse01guc.cloudfront.net/fonts/v1.0/pfdin/pfdin-bold.ttf') format("truetype");
+  src: url('../assets/pfdin-bold.ttf') format("truetype");
 }
 @font-face {
   font-family: PFDinTextPro;
   font-weight: 100;
   font-style: normal;
-  src: url('../source/style/d32ajffse01guc.cloudfront.net/fonts/v1.0/pfdin/pfdin-light.eot?#iefix') format("embedded-opentype"), url('../source/style/d32ajffse01guc.cloudfront.net/fonts/v1.0/pfdin/pfdin-light.ttf') format("truetype");
+  src: url('../assets/pfdin-light.ttf') format("truetype");
 }
 @font-face {
   font-family: PFDinTextPro;
   font-weight: 500;
   font-style: normal;
-  src: url('../source/style/d32ajffse01guc.cloudfront.net/fonts/v1.0/pfdin/pfdin-medium.eot?#iefix') format("embedded-opentype"), url('../source/style/d32ajffse01guc.cloudfront.net/fonts/v1.0/pfdin/pfdin-medium.ttf') format("truetype");
+  src: url('../assets/pfdin-medium.ttf') format("truetype");
 }
 @font-face {
   font-family: PFDinTextPro;
   font-weight: 400;
   font-style: normal;
-  src: url('../source/style/d32ajffse01guc.cloudfront.net/fonts/v1.0/pfdin/pfdin-regular.eot?#iefix') format("embedded-opentype"), url('../source/style/d32ajffse01guc.cloudfront.net/fonts/v1.0/pfdin/pfdin-regular.ttf') format("truetype");
+  src: url('../assets/pfdin-regular.ttf') format("truetype");
 }
 /* Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif; */
 /*
@@ -978,7 +980,7 @@
   vertical-align: middle;
   z-index: 2;
   color: #a6a6a6;
-  background: transparent url('../source/images/DarkTheme_Icons/scroller_icon.png') no-repeat center 0;
+  background: transparent url('../assets/DarkTheme_Icons/scroller_icon.png') no-repeat center 0;
 }
 .moon-simple-integer-picker-client {
   padding: 0;
@@ -1123,7 +1125,7 @@
   -webkit-transform: rotate(270deg) translateZ(1px);
 }
 .spotlight .moon-simple-integer-picker-button {
-  background: url('../source/images/DarkTheme_Icons/scroller_icon.png') no-repeat center -50px;
+  background: url('../assets/DarkTheme_Icons/scroller_icon.png') no-repeat center -50px;
 }
 /* Checkbox.css */
 .moon-checkbox {
@@ -1132,7 +1134,7 @@
   width: 24px;
 }
 .moon-checkbox[checked] {
-  background-image: url('../source/images/DarkTheme_Icons/Checkmark_Icon.png');
+  background-image: url('../assets/DarkTheme_Icons/Checkmark_Icon.png');
   background-repeat: no-repeat;
   background-position: -5px 1px;
 }
@@ -1177,14 +1179,14 @@
   right: 10px;
 }
 .moon-checkbox-item.spotlight .moon-checkbox[checked] {
-  background-image: url('../source/images/DarkTheme_Icons/CheckmarkWhite_Icon.png');
+  background-image: url('../assets/DarkTheme_Icons/CheckmarkWhite_Icon.png');
 }
 .enyo-locale-right-to-left .moon-checkbox-item .moon-checkbox {
   left: 10px;
   right: auto;
 }
 .moon-neutral .moon-checkbox[checked] {
-  background-image: url('../source/images/DarkTheme_Icons/CheckmarkWhite_Icon.png');
+  background-image: url('../assets/DarkTheme_Icons/CheckmarkWhite_Icon.png');
 }
 .moon-checkbox-item .moon-checkbox[checked] {
   background-color: transparent;
@@ -1711,7 +1713,7 @@
   margin: 0px;
   background-position: right 0px top 12px;
   background-repeat: no-repeat;
-  background-image: url('../source/images/DarkTheme_Icons/SmallCarat_down1.png');
+  background-image: url('../assets/DarkTheme_Icons/SmallCarat_down1.png');
   display: inline-block;
   padding-right: 40px;
 }
@@ -1721,7 +1723,7 @@
   background-position: left 0px top 12px;
 }
 .moon-expandable-list-item .spotlight .moon-expandable-picker-header {
-  background-image: url('../source/images/DarkTheme_Icons/SmallCarat_down2.png');
+  background-image: url('../assets/DarkTheme_Icons/SmallCarat_down2.png');
 }
 /* Header - Disabled */
 .moon-expandable-picker-header-wrapper.disabled {
@@ -1730,17 +1732,17 @@
 }
 /*for expandable itmes*/
 .moon-expandable-list-item.moon-expandable-input.open .moon-expandable-picker-header {
-  background-image: url('../source/images/DarkTheme_Icons/SmallCarat_up1.png');
+  background-image: url('../assets/DarkTheme_Icons/SmallCarat_up1.png');
 }
 .moon-expandable-list-item.moon-expandable-input.open .spotlight .moon-expandable-picker-header {
-  background-image: url('../source/images/DarkTheme_Icons/SmallCarat_up2.png');
+  background-image: url('../assets/DarkTheme_Icons/SmallCarat_up2.png');
 }
 /* Header - Open */
 .moon-expandable-picker.open .moon-expandable-picker-header {
-  background-image: url('../source/images/DarkTheme_Icons/SmallCarat_up1.png');
+  background-image: url('../assets/DarkTheme_Icons/SmallCarat_up1.png');
 }
 .moon-expandable-picker.open .spotlight .moon-expandable-picker-header {
-  background-image: url('../source/images/DarkTheme_Icons/SmallCarat_up2.png');
+  background-image: url('../assets/DarkTheme_Icons/SmallCarat_up2.png');
 }
 /* Current Value */
 .moon-expandable-picker-current-value {
@@ -2187,7 +2189,7 @@
   background-repeat: no-repeat;
 }
 .moon-scroll-picker-overlay-container.top-image {
-  background-image: url('../source/images/DarkTheme_Icons/SmallCarat_up1.png');
+  background-image: url('../assets/DarkTheme_Icons/SmallCarat_up1.png');
 }
 .moon-scroll-picker-overlay-container.bottom {
   bottom: 0;
@@ -2195,19 +2197,19 @@
   background-repeat: no-repeat;
 }
 .moon-scroll-picker-overlay-container.bottom-image {
-  background-image: url('../source/images/DarkTheme_Icons/SmallCarat_down1.png');
+  background-image: url('../assets/DarkTheme_Icons/SmallCarat_down1.png');
 }
 .spotlight .moon-scroll-picker-overlay-container.top {
   background-position: center -27px;
 }
 .spotlight .moon-scroll-picker-overlay-container.top.top-image {
-  background-image: url('../source/images/DarkTheme_Icons/CaratPickerUp_Icon.png');
+  background-image: url('../assets/DarkTheme_Icons/CaratPickerUp_Icon.png');
 }
 .spotlight .moon-scroll-picker-overlay-container.bottom {
   background-position: center -39px;
 }
 .spotlight .moon-scroll-picker-overlay-container.bottom.bottom-image {
-  background-image: url('../source/images/DarkTheme_Icons/CaratPickerDown_Icon.png');
+  background-image: url('../assets/DarkTheme_Icons/CaratPickerDown_Icon.png');
 }
 .moon-scroll-picker-overlay {
   display: none;
@@ -2221,13 +2223,13 @@
   top: 0;
   border-top-style: solid;
   border-radius: 45px 45px 0 0;
-  background: #00adef url('../source/images/DarkTheme_Icons/CaratPickerUp_Icon.png') center -60px no-repeat;
+  background: #00adef url('../assets/DarkTheme_Icons/CaratPickerUp_Icon.png') center -60px no-repeat;
 }
 .moon-scroll-picker-overlay.bottom {
   bottom: 0;
   border-bottom-style: solid;
   border-radius: 0 0 45px 45px;
-  background: #00adef url('../source/images/DarkTheme_Icons/CaratPickerDown_Icon.png') center -60px no-repeat;
+  background: #00adef url('../assets/DarkTheme_Icons/CaratPickerDown_Icon.png') center -60px no-repeat;
 }
 .moon-scroll-picker-overlay-container.selected .moon-scroll-picker-overlay {
   display: block;
@@ -2706,12 +2708,12 @@
 .moon-contextual-popup.below::after {
   top: 9px;
   margin: -36px 0px 0px -23px;
-  background-image: url('../source/images/DarkTheme_Icons/ContextualMenu_Up.png');
+  background-image: url('../assets/DarkTheme_Icons/ContextualMenu_Up.png');
 }
 .moon-contextual-popup.above::after {
   top: 100%;
   margin-top: -4px;
-  background-image: url('../source/images/DarkTheme_Icons/ContextualMenu_Down.png');
+  background-image: url('../assets/DarkTheme_Icons/ContextualMenu_Down.png');
 }
 /* Left/Right-pointing nubs */
 .moon-contextual-popup.left::after,
@@ -2721,12 +2723,12 @@
 }
 .moon-contextual-popup.right::after {
   left: 100%;
-  background-image: url('../source/images/DarkTheme_Icons/ContextualMenu_Right.png');
+  background-image: url('../assets/DarkTheme_Icons/ContextualMenu_Right.png');
 }
 .moon-contextual-popup.left::after {
   left: 0%;
   margin-left: -27px;
-  background-image: url('../source/images/DarkTheme_Icons/ContextualMenu_Left.png');
+  background-image: url('../assets/DarkTheme_Icons/ContextualMenu_Left.png');
 }
 /* Low nubs */
 .moon-contextual-popup.left.low::after,
@@ -2743,28 +2745,28 @@
   top: 100%;
   left: 90%;
   margin: 0px 0px 0px -32px;
-  background-image: url('../source/images/DarkTheme_Icons/ContextualMenu_Down.png');
+  background-image: url('../assets/DarkTheme_Icons/ContextualMenu_Down.png');
 }
 /* Bottom left corner nub */
 .moon-contextual-popup.right.above::after {
   top: 100%;
   left: 10%;
   margin: 0px;
-  background-image: url('../source/images/DarkTheme_Icons/ContextualMenu_Down.png');
+  background-image: url('../assets/DarkTheme_Icons/ContextualMenu_Down.png');
 }
 /* Top right corner nub */
 .moon-contextual-popup.left.below::after {
   top: 0%;
   left: 90%;
   margin-top: -27px;
-  background-image: url('../source/images/DarkTheme_Icons/ContextualMenu_Up.png');
+  background-image: url('../assets/DarkTheme_Icons/ContextualMenu_Up.png');
 }
 /* Top left corner nub */
 .moon-contextual-popup.right.below::after {
   top: 9px;
   left: 20%;
   margin-top: -36px;
-  background-image: url('../source/images/DarkTheme_Icons/ContextualMenu_Up.png');
+  background-image: url('../assets/DarkTheme_Icons/ContextualMenu_Up.png');
 }
 .moon-contextual-popup-client {
   height: 100%;
@@ -3207,7 +3209,7 @@
   background-repeat: no-repeat;
   background-position: center;
   background-color: #4b4b4b;
-  background-image: url('../source/images/DarkTheme_Icons/carat-white-left.png');
+  background-image: url('../assets/DarkTheme_Icons/carat-white-left.png');
   -webkit-transform: translate3d(0, 0, 0);
   transition: -webkit-transform 0.2s linear, opacity 0.2s linear;
   opacity: 1;
@@ -3217,7 +3219,7 @@
   -webkit-transform: translate3d(-120px, 0, 0);
 }
 .moon-panels-handle.right {
-  background-image: url('../source/images/DarkTheme_Icons/caret-white-right.png');
+  background-image: url('../assets/DarkTheme_Icons/caret-white-right.png');
 }
 .moon-panels-handle-wrapper.hidden {
   display: none;
@@ -3241,19 +3243,19 @@
 .moon-accordion .moon-accordion-arrow {
   background-position: right top 13px;
   background-repeat: no-repeat;
-  background-image: url('../source/images/DarkTheme_Icons/SmallCarat_down1.png');
+  background-image: url('../assets/DarkTheme_Icons/SmallCarat_down1.png');
 }
 .enyo-locale-right-to-left .moon-accordion .moon-accordion-arrow {
   background-position: left top 13px;
 }
 .moon-accordion .spotlight .moon-accordion-arrow {
-  background-image: url('../source/images/DarkTheme_Icons/SmallCarat_down2.png');
+  background-image: url('../assets/DarkTheme_Icons/SmallCarat_down2.png');
 }
 .moon-accordion.open .moon-accordion-arrow {
-  background-image: url('../source/images/DarkTheme_Icons/SmallCarat_up1.png');
+  background-image: url('../assets/DarkTheme_Icons/SmallCarat_up1.png');
 }
 .moon-accordion.open .spotlight .moon-accordion-arrow {
-  background-image: url('../source/images/DarkTheme_Icons/SmallCarat_up2.png');
+  background-image: url('../assets/DarkTheme_Icons/SmallCarat_up2.png');
 }
 /* Calendar.css */
 .moon-calendar-picker {
@@ -3486,10 +3488,10 @@
   top: 10px;
 }
 .moon-drawers-activator-nub .down {
-  background: url('../source/images/DarkTheme_Icons/drawer_down.png') 0 0 no-repeat;
+  background: url('../assets/DarkTheme_Icons/drawer_down.png') 0 0 no-repeat;
 }
 .moon-drawers-activator-nub .up {
-  background: url('../source/images/DarkTheme_Icons/drawer_up_spotlight.png') 0 0 no-repeat;
+  background: url('../assets/DarkTheme_Icons/drawer_up_spotlight.png') 0 0 no-repeat;
 }
 /* The activator & nub are white when a drawer is open */
 .moon-drawers-activator.drawer-open {
@@ -3519,7 +3521,7 @@
 }
 .spotlight .moon-drawers-activator-nub .up {
   border-color: transparent transparent white transparent;
-  background-image: url('../source/images/DarkTheme_Icons/drawer_up_spotlight.png');
+  background-image: url('../assets/DarkTheme_Icons/drawer_up_spotlight.png');
 }
 .spotlight .moon-drawers-activator-nub .up::after {
   border-color: transparent transparent #00adef transparent;
@@ -4692,10 +4694,10 @@
 }
 /* Header - Open */
 .moon-expandable-input.open .moon-expandable-picker-header {
-  background-image: url('../source/images/DarkTheme_Icons/SmallCarat_up1.png');
+  background-image: url('../assets/DarkTheme_Icons/SmallCarat_up1.png');
 }
 .moon-expandable-input.open .spotlight .moon-expandable-picker-header {
-  background-image: url('../source/images/DarkTheme_Icons/SmallCarat_up2.png');
+  background-image: url('../assets/DarkTheme_Icons/SmallCarat_up2.png');
 }
 .moon-highlight-text-highlighted {
   color: #00adef;
@@ -4916,7 +4918,7 @@
   padding-right: 38px;
   background-repeat: no-repeat;
   background-position: right center;
-  background-image: url('../source/images/DarkTheme_Icons/SmallCarat_up1.png');
+  background-image: url('../assets/DarkTheme_Icons/SmallCarat_up1.png');
   border-right: solid 2px transparent;
 }
 .moon-expandable-text .moon-item.moon-expandable-text-button a:link {
@@ -4952,17 +4954,17 @@
 }
 .moon-expandable-text .moon-item.moon-expandable-text-button.spotlight {
   color: #ffffff;
-  background-image: url('../source/images/DarkTheme_Icons/SmallCarat_up2.png');
+  background-image: url('../assets/DarkTheme_Icons/SmallCarat_up2.png');
   border-right: solid 2px #00adef;
 }
 .enyo-locale-right-to-left .moon-expandable-text .moon-item.moon-expandable-text-button.spotlight {
   border-left: solid 2px #00adef;
 }
 .moon-expandable-text .moon-item.moon-expandable-text-button.collapsed {
-  background-image: url('../source/images/DarkTheme_Icons/SmallCarat_down1.png');
+  background-image: url('../assets/DarkTheme_Icons/SmallCarat_down1.png');
 }
 .moon-expandable-text .moon-item.moon-expandable-text-button.collapsed.spotlight {
-  background-image: url('../source/images/DarkTheme_Icons/SmallCarat_down2.png');
+  background-image: url('../assets/DarkTheme_Icons/SmallCarat_down2.png');
 }
 .moon-expandable-text .moon-item.moon-expandable-text-button.hidden {
   display: none;

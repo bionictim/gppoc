@@ -13,6 +13,7 @@ enyo.kind({
     showJumpControls: true,
     jumpStartEnd: true,
     showFFRewindControls: true,
+    iconPath: "$lib/../assets/video-player/",
     published: {
         link: "",
         playlist: null, // Not necessary unless we access publicly
@@ -64,6 +65,7 @@ enyo.kind({
     //     components: [{ kind: "moon.Clock" }]
     // }
     ],
+    // _pauseImg:              "../../../../assets/face.png",  //icon_indicator_pause.png",
     bindings: [
         // { from: ".playlist.isFetching", to: ".playlistIsFetching" },
         { from: ".currentVideoClip.video_link", to: ".src" },
@@ -94,7 +96,9 @@ enyo.kind({
     currentVideoIndexChanged: function (inOldValue) {
         if (this.currentVideoIndex > -1 ) {
             if (this.currentVideoIndex < this.playlist.length) {
-                this.set("currentVideoClip", this.playlist.at(this.currentVideoIndex));
+                var clip = this.playlist.at(this.currentVideoIndex);
+                enyo.log(clip.attributes.video_link);
+                this.set("currentVideoClip", clip);
                 this.set("infoIconText", this.currentVideoClip.attributes.vertical);
                 this.play();
             } else {

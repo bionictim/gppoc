@@ -11,8 +11,8 @@ enyo.kind({
     //showInfo: true,
     autoplay: false,
     showJumpControls: true,
-    jumpStartEnd: true,
-    showFFRewindControls: true,
+    jumpStartEnd: false,
+    showFFRewindControls: false,
     iconPath: "$lib/../assets/video-player/",
     published: {
         link: "",
